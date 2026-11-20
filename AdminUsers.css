@@ -1,0 +1,99 @@
+.admin-users-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f4f6f9;
+}
+
+.admin-users-header {
+  background: #b71c1c;
+  color: white;
+  padding: 22px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.admin-users-header a {
+  color: white;
+  text-decoration: none;
+  background: #8e0000;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.admin-users-content {
+  margin-top: 30px;
+}
+
+.users-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.users-title-row button {
+  background: #b71c1c;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-users-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.admin-user-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.admin-user-card h3 {
+  color: #b71c1c;
+  margin-bottom: 15px;
+}
+
+.admin-user-card p {
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+.delete-user-btn {
+  margin-top: 15px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.delete-user-btn:hover {
+  background: #a00000;
+}
+
+.users-message {
+  color: #b71c1c;
+}
+
+@media (max-width: 600px) {
+  .admin-users-page {
+    padding: 15px;
+  }
+
+  .admin-users-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

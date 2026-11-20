@@ -1,0 +1,62 @@
+.blood-request-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #fff3f3;
+}
+
+.blood-request-box {
+  width: 100%;
+  max-width: 550px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.blood-request-box h1 {
+  text-align: center;
+  color: #c1121f;
+  margin-bottom: 12px;
+}
+
+.blood-request-box p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.blood-request-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.blood-request-box label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.blood-request-box input,
+.blood-request-box select {
+  padding: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.blood-request-box button {
+  padding: 14px;
+  background: #d71920;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.blood-request-box button:hover {
+  background: #a90f16;
+}

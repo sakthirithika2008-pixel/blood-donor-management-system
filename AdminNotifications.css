@@ -1,0 +1,198 @@
+/* NOTIFICATION */
+
+.bc-toast {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 99999;
+
+  min-width: 280px;
+  max-width: 400px;
+
+  padding: 17px 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: white;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+  font-size: 14px;
+  font-weight: 600;
+
+  animation: bcSlideIn 0.3s ease;
+}
+
+.bc-toast span {
+  width: 25px;
+  height: 25px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: white;
+  font-size: 15px;
+}
+
+.bc-toast.success {
+  color: #166534;
+  border-left: 5px solid #22c55e;
+}
+
+.bc-toast.success span {
+  background: #22c55e;
+}
+
+.bc-toast.error {
+  color: #991b1b;
+  border-left: 5px solid #ef4444;
+}
+
+.bc-toast.error span {
+  background: #ef4444;
+}
+
+@keyframes bcSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* DELETE CONFIRMATION MODAL */
+
+.bc-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 99998;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.bc-confirm-modal {
+  width: 100%;
+  max-width: 420px;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+
+  animation: bcModalShow 0.25s ease;
+}
+
+.bc-modal-icon {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.bc-confirm-modal h2 {
+  color: #651526;
+  font-size: 23px;
+  margin: 0 0 15px;
+}
+
+.bc-confirm-modal p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.bc-modal-warning {
+  color: #999 !important;
+  font-size: 12px !important;
+}
+
+.bc-modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.bc-modal-buttons button {
+  padding: 12px 22px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.bc-cancel-btn {
+  background: #eeeeee;
+  color: #444;
+}
+
+.bc-cancel-btn:hover {
+  background: #dddddd;
+}
+
+.bc-delete-btn {
+  background: #a52b46;
+  color: white;
+}
+
+.bc-delete-btn:hover {
+  background: #651526;
+}
+
+@keyframes bcModalShow {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+  .bc-toast {
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    min-width: auto;
+  }
+
+  .bc-confirm-modal {
+    padding: 25px 18px;
+  }
+
+  .bc-modal-buttons button {
+    padding: 11px 16px;
+  }
+}

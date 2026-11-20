@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  max-width: none;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+.navbar h2 {
+  color: #d71920;
+  font-size: 26px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #d71920;
+}
+
+/* BUTTONS */
+button {
+  background: #d71920;
+  color: white;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a90f16;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 8%;
+  background: #fff3f3;
+  gap: 40px;
+  min-height: 480px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-tag {
+  color: #d71920;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  color: #292929;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #d71920;
+}
+
+.hero-content p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  background: white;
+  padding: 65px 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.08);
+}
+
+.blood-icon {
+  font-size: 110px;
+  margin-bottom: 15px;
+}
+
+.hero-image h2 {
+  color: #c1121f;
+  font-size: 30px;
+}
+
+.hero-image p {
+  margin-top: 10px;
+  color: #666;
+}
+
+.find-btn {
+  background: #333;
+}
+
+/* ABOUT */
+.about {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.about h2 {
+  color: #c1121f;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* BLOOD GROUPS */
+.blood-groups {
+  text-align: center;
+  padding: 70px 7%;
+  background: #fffafa;
+}
+
+.blood-groups h2 {
+  font-size: 32px;
+  color: #c1121f;
+  margin-bottom: 15px;
+}
+
+.group-description {
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+.blood-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 950px;
+  margin: auto;
+}
+
+.blood-card {
+  background: white;
+  padding: 30px 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,.08);
+  border-bottom: 4px solid #d71920;
+  transition: .3s;
+}
+
+.blood-card:hover {
+  transform: translateY(-6px);
+}
+
+.blood-card h3 {
+  font-size: 32px;
+  color: #d71920;
+  margin-bottom: 10px;
+}
+
+.blood-card p {
+  color: #666;
+}
+
+/* STATISTICS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 60px 7%;
+  background: #fff3f3;
+  text-align: center;
+}
+
+.stat-card {
+  background: white;
+  padding: 30px 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,.08);
+}
+
+.stat-card h2 {
+  color: #d71920;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #555;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 7% 80px;
+}
+
+.card {
+  flex: 1;
+  text-align: center;
+  padding: 35px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,.08);
+  background: white;
+}
+
+.card h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #c1121f;
+  margin-bottom: 15px;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+/* CALL TO ACTION */
+.cta {
+  text-align: center;
+  padding: 70px 20px;
+  background: #c1121f;
+  color: white;
+}
+
+.cta h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.cta button {
+  background: white;
+  color: #c1121f;
+  font-weight: bold;
+  padding: 14px 30px;
+}
+
+.cta button:hover {
+  background: #ffe5e5;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #292929;
+  color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blood-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
